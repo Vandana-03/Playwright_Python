@@ -1,10 +1,9 @@
-import os
-
 from playwright.sync_api import Playwright, sync_playwright, expect
 
 def fileupload(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=False,slow_mo=90)
     context = browser.new_context()
+    page=context.new_page()
     page.goto("https://testing.qaautomationlabs.com/file-upload.php")
 
     #check the page title
