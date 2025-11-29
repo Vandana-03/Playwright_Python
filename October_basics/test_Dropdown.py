@@ -11,7 +11,10 @@ def test_drop_down(page: Page):
     page.locator("#fruitDropdown").select_option("Banana")
     page.locator("#fruitDropdown").select_option("Mango")
     page.locator("#fruitDropdown").select_option("Orange")
+    page.locator("#fruitDropdown").select_option("M Orange")
 
 
 '''does not work → Playwright only supports passing a list if the <select> allows multiple selections'''
     #page.locator("#fruitDropdown").select_option(value=["Apple", "Banana", "Mango", "Orange"])
+
+

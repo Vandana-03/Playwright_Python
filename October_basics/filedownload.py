@@ -18,3 +18,4 @@ def filedownload(playwright: Playwright) -> None:
 
 with sync_playwright() as playwright:
     filedownload(playwright)
+
